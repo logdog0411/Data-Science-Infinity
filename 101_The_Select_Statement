@@ -1,0 +1,59 @@
+-- The Select Statement--
+
+Select  
+  * 
+  
+from 
+  grocery_db.product_areas;
+
+--LIMIT--
+
+Select  
+  * 
+  
+from 
+  grocery_db.product_areas
+  
+LIMIT
+  3;
+
+--ORDER BY--
+
+Select  
+  * 
+  
+from 
+  grocery_db.customer_details
+  
+ORDER BY
+  distance_from_store,
+  credit score;
+  
+--DISTINCT--
+
+Select 
+  DISTINCT 
+  gender
+  
+from 
+  grocery_db.customer_details;
+
+--ALIAS--
+
+SELECT 
+  distance_from_store as dist_from,
+  customer_id as number
+  
+FROM grocery_db.customer_details;
+  
+--Creating new cols--
+
+SELECT 
+  distance_from_store as dist_from,
+  customer_id as number,
+  1 as new_col,
+  distance_from_store *1.6 as distance_from_store_km
+  
+FROM grocery_db.customer_details;
+
+
