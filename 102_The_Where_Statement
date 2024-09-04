@@ -1,0 +1,97 @@
+-- THE WHERE STATEMENT --
+
+Select
+  *
+ 
+From
+  grocery_db.customer_details
+  
+Where
+  distance_from_store < 2;
+
+
+-- MULTIPLE CONDITIONS --
+
+
+-- AND
+Select
+  *
+ 
+From
+  grocery_db.customer_details
+  
+Where
+  distance_from_store < 2 and
+  gender = 'M';
+
+
+-- OR
+Select
+  *
+ 
+From
+  grocery_db.customer_details
+  
+Where
+  distance_from_store < 2 or
+  gender = 'M';
+
+
+-- OTHER OPERATORS
+
+Select
+  *
+  
+From
+  grocery_db.campaign_data;
+  
+-- in
+
+Select
+  *
+  
+From
+  grocery_db.campaign_data
+  
+Where 
+  mailer_type in('Mailer1','Mailer2');
+  
+
+--Like 
+
+Select
+  *
+  
+From
+  grocery_db.campaign_data
+  
+Where 
+  mailer_type like '%Mailer%';
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
